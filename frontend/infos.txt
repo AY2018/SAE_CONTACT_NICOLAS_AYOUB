@@ -1,0 +1,2 @@
+Ensure your backend API is configured to handle CORS (Cross-Origin Resource Sharing) requests since your frontend (React app) and backend (Symfony API) are served from different origins during development.
+Replace http://localhost/SAE_contactAPP/backend/public/index.php with the actual URL where your backend API is hosted.

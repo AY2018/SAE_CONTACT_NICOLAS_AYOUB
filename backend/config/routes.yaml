@@ -1,0 +1,50 @@
+contacts_list:
+    path: /contacts/{id}
+    controller: App\Controller\ContactController::contactsList
+    methods: GET
+
+contact_show:
+    path: /contact/{id}
+    controller: App\Controller\ContactController::index
+    methods: GET
+
+contact_create:
+    path: /contacts/new
+    controller: App\Controller\ContactController::createContact
+    methods: POST
+
+contact_edit:
+    path: /contacts/{id}/edit
+    controller: App\Controller\ContactController::editContact
+    methods: PUT
+
+contact_delete:
+    path: /contacts/{id}/delete
+    controller: App\Controller\ContactController::deleteContact
+    methods: DELETE
+
+
+# Login and Register
+
+app_register:
+    path: /register
+    controller: App\Controller\SecurityController::register
+    methods: [POST]
+
+app_login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+    methods: [POST]
+
+verif_session:
+    path: /verif
+    controller: App\Controller\SecurityController::verifSession
+    methods: GET
+
+logout:
+    path: /logout
+    controller: App\Controller\SecurityController::logout
+    methods: GET
+
+api_login_check:
+    path: /api/login_check
